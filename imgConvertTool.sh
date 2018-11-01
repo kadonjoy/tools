@@ -46,7 +46,6 @@ function main()
         exit -1
     fi
 
-
     while [ ! -z $1 ]
     do
         case $1 in
@@ -68,4 +67,5 @@ function main()
     done
     exit 0
 }
+
 main $@
