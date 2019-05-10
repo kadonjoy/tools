@@ -317,6 +317,7 @@ int main(int argc, char ** argv)
     }
 
     free(buffer);
+	free(yuv_buffer);
     close(fd);
 	return 0;
 }

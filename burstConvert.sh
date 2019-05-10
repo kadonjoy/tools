@@ -25,7 +25,8 @@ function burst_unpack_mipiraw()
 
 function burst_yuv2jpeg()
 {
-    for file in $(find $1 -regex ".*\.yuv\|.*\.nv[12][12]")
+    echo "burst_yuv2jpeg"
+    for file in $(find $1 -regex ".*\.yuv\|.*\.nv[12][12]\|.*\.NV[12][12]")
     do
         ./imgConvertTool.sh -Y2J $file $2 $3
     done
